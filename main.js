@@ -37,7 +37,7 @@ function getData(questionCategory) {
       ) {
         currentIndex = 0;
         rightAnswers = 0;
-        coundown(30, selectedObjLen);
+        coundown(60, selectedObjLen);
       }
       submit.onclick = () => {
         let rightAnswer = selectedObjects[currentIndex].right_answer;
@@ -49,7 +49,7 @@ function getData(questionCategory) {
         addQuestionData(selectedObjects[currentIndex], selectedObjLen);
         handleBullets();
         clearInterval(countdownInterval);
-        coundown(30, selectedObjLen);
+        coundown(60, selectedObjLen);
         showResult(selectedObjLen, questionCategory);
       };
     }
